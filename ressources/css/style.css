@@ -94,7 +94,7 @@ body::after {
     align-items: center;
 }
 
-h1 {
+.intro h1 {
   display: grid;
   align-items: center;
   justify-content: center;

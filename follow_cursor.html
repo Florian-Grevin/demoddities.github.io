@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" lang="fr" content="Grévin Florian">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="tdm-rep" content="none">
+		<meta name="description" content="">
+		<meta name="permissions-policy" content="interest-cohort=()">
+		<meta name="theme-color" content="#22718c">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" href="ressources/assets/projets/follow_cursor/favicon_follow_cursor.svg" type="image/svg+xml">
+		<link href="ressources/css/projets/follow_cursor.css" rel="stylesheet">
+		<script src="ressources/script/jquery/3.7.1/jquery.min.js"></script>
+		<title>Follow Eyes</title>
+	</head>
+	<body>
+		<div class="glassmorphism-main">
+		  <div class="glassmorphism-card top-left">
+			<div class="glassmorphism-border"></div>
+			<div class="glassmorphism-line-horizontal"></div>
+			<div class="glassmorphism-line-vertical"></div>
+			<div class="glassmorphism-inner-shadow"></div>
+			<div class="glassmorphism-radial-overlay"></div>
+			<h1 class="glassmorphism-title"><strong>Follow Eyes</strong></h1>
+		  </div> 
+		  <div class="bottom-buttons">
+			  <a class="glassmorphism-card bottom-left" href="index.html">←
+				<div class="glassmorphism-border"></div>
+				<div class="glassmorphism-line-horizontal"></div>
+				<div class="glassmorphism-line-vertical"></div>
+				<div class="glassmorphism-inner-shadow"></div>
+				<div class="glassmorphism-radial-overlay"></div>
+			  </a>
+			  <div class="glassmorphism-card bottom-right">
+				<div class="glassmorphism-border"></div>
+				<div class="glassmorphism-line-horizontal"></div>
+				<div class="glassmorphism-line-vertical"></div>
+				<div class="glassmorphism-inner-shadow"></div>
+				<div class="glassmorphism-radial-overlay"></div>
+				<h2 class="glassmorphism-title">State: <span id="currentState">Default</span></h2>
+			  </div>
+		  </div>
+		</div>
+		<div id="logo-container">
+			<div id="logo-main">
+			<svg id="logo" x="0px" y="0px" viewBox="0 0 79.4 68.3" width="500" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<linearGradient id="neumorph-gradient" gradientTransform="rotate(145)">
+					  <stop offset="0%" stop-color="#247996"/>
+					  <stop offset="100%" stop-color="#1f667e"/>
+					</linearGradient>					
+					<filter id="neumorph-shadow" x="-50%" y="-50%" width="200%" height="200%">
+					  <feDropShadow dx="6" dy="6" stdDeviation="4" flood-color="#1a576c"/>
+					  <feDropShadow dx="-6" dy="-6" stdDeviation="4" flood-color="#2a8bac"/>
+					</filter>
+					<filter id="inset-eyes-small" x="-50%" y="-50%" width="200%" height="200%">
+						<feDropShadow dx="0.7" dy="0.7" stdDeviation="1.4" flood-color="#1b586d" />
+						<feDropShadow dx="-0.7" dy="-0.7" stdDeviation="1.4" flood-color="#298aab" />
+					</filter>
+					<radialGradient id="eye-fill-small" cx="50%" cy="50%" r="50%">
+						<stop offset="0%" stop-color="#22718c" />
+						<stop offset="100%" stop-color="#1c6073" />
+					</radialGradient>
+					<filter id="confused-eye-shadow" x="-50%" y="-50%" width="200%" height="200%">
+						<feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#1b586d" />
+					</filter>
+				</defs>
+				
+				<g transform="translate(39.7 34.15) scale(0.75) translate(-39.7 -34.15)">
+					<g class="crossEyed">
+						<path d="M75.3 7.3H39.7C35.5 2.8 29.5 0 22.9 0C10.3 0 0 10.3 0 22.9C0 27.8 1.5 32.3 4.1 36C4.3 37.3 4.5 38.7 4.9 39.9C5.25 40.95 5.98 44 7.4 47.1C9.63
+						51.97 12.74 55.65 14.8 57.8C15.02 58.03 15.73 58.69 16.7 59.5C17.79 60.41 21.61 63.47 27.52 65.68C28.87 66.19 34.36 68.16 41.8 68.2C42.15 68.2 42.89 68.2
+						43.87 68.16C48.04 67.99 56.2 67.11 63.6 62.5C64.03 62.23 64.78 61.76 65.74 61.05C72.6 55.95 75.4 49.36 76.4 46.9C77.18 45 78.27 41.88 78.9 37.1C80.43 25.46
+						77.82 14.61 75.3 7.3ZM69.5 16.7C70.5 19.69 71.58 24.1 71.5 29.5C71.45 33.06 70.91 36.12 70.3 38.5H46.4V16.7H69.5ZM22.9 8C31.1 8 37.8 14.7 37.8 22.9C37.8 31.1
+						31.1 37.8 22.9 37.8C14.7 37.8 8 31.2 8 22.9C8 14.6 14.7 8 22.9 8ZM60.09 53.11C55.63 56.17 51.19 56.97 47.92 57.56C44.48 58.18 41.82 58.2 41.19 58.2C37.91 58.2
+						30.6 58.12 23.47 53.51C21.57 52.28 18.63 50.05 15.89 46.3C15.89 46.3 66.29 46.3 66.51 46.61C64.24 49.94 61.75 51.96 60.08 53.11H60.09Z" fill="url(#neumorph-gradient)" filter="url(#neumorph-shadow)"/>
+						<path class="hide" d="m66.51 46.61c-.22-.31-50.62-.31-50.62-.31 2.74 3.75 5.68 5.98 7.58 7.21 7.13 4.61 14.44 4.69 17.72 4.69.63 0 3.29-.02 6.73-.64 3.27-.59 7.71-1.39 12.17-4.45h-.01c1.67-1.15 4.16-3.17 6.43-6.5Z" fill="transparent"/>
+					</g>
+					<path class="hitbox right hide" d="M69.4999 16.7C70.4999 19.69 71.5799 24.1 71.4999 29.5C71.4499 33.06 70.9099 36.12 70.2999 38.5H46.3999V16.7H69.4999Z"/>
+					<circle class="hitbox left hide" cx="22.9" cy="22.9" r="15"/>
+					
+					<g fill="url(#eye-fill-small)" filter="url(#inset-eyes-small)">
+						<g>
+							<circle class="hitbox left eye" cx="22.9" cy="22.9" r="4.7"/>
+							<circle class="hitbox right eye" cx="59" cy="27.6" r="2.9"/>
+						</g>
+						<g class="sleepLook" fill="url(#eye-fill-small)" filter="url(#inset-eyes-small)">
+						   <path class="sleep state hide" d="m22.9 25.91c-1.66 0-3.01-1.35-3.01-3.01h-1.69c0 2.6 2.1 4.7 4.7 4.7s4.7-2.1 4.7-4.7h-1.69c0 1.66-1.35 3.01-3.01 3.01Z"/>
+						   <path class="sleep state hide" d="m59 29.46c-1.03 0-1.86-.83-1.86-1.86h-1.04c0 1.6 1.3 2.9 2.9 2.9s2.9-1.3 2.9-2.9h-1.04c0 1.03-.83 1.86-1.86 1.86Z"/>
+						</g>
+					</g>
+					<g class="confusedLook" stroke="#1a576c"> <!--filter="url(#confused-eye-shadow)"--><!--stroke="url(#neumorph-gradient)">-->
+					  <g class="confused-left">
+						<path class="rotate rl state confused hide" d="m27.49 22.81c-.2 2.79-2.55 4.8-4.97 4.63-2.22-.15-4.35-2.13-4.2-4.5.13-2.04 1.93-4.06 4.1-3.9 1.92.15 3.68 1.98 3.45 3.9-.16 1.32-1.3 2.83-2.91 2.84-1.55 0-3.06-1.38-2.92-2.84.11-1.09 1.14-2.27 2.33-2.16.91.08 1.85.92 1.81 1.87-.03.61-.49 1.38-1.17 1.43-.63.05-1.36-.5-1.28-1.03.06-.43.65-.65.71-.68"/>
+					  </g>
+					  <g class="confused-right">
+						<path class="rotate rr state confused hide" d="m56.2 27.72c.12-1.72 1.57-2.96 3.06-2.86 1.37.09 2.68 1.32 2.59 2.78-.08 1.26-1.19 2.51-2.53 2.4-1.18-.09-2.27-1.22-2.13-2.4.1-.82.8-1.75 1.79-1.75.96 0 1.89.85 1.8 1.75-.07.67-.7 1.4-1.44 1.33-.56-.05-1.14-.57-1.11-1.15.02-.38.3-.85.72-.88.39-.03.84.31.79.63-.04.27-.4.4-.44.42"/>
+					  </g>
+					</g>
+				</g>
+			</svg>
+			<div id="fx" class="hide">
+				<span class="sleepyZ"></span>
+				<span class="sleepyZ"></span>
+				<span class="sleepyZ"></span>
+			</div>
+			</div>
+		</div>
+		<script src="ressources/script/projets/follow_cursor.js"></script>
+	</body>
+</html>

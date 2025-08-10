@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.54 13.46">
+  <defs>
+    <style>
+      .confused-line {
+        fill: none;
+        stroke-width: 3px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+	<linearGradient id="neumorph-gradient" gradientTransform="rotate(145)">
+		<stop offset="0%" stop-color="#247996"/>
+		<stop offset="100%" stop-color="#1f667e"/>
+	</linearGradient>	
+    <filter id="confused-eye-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#1b586d" />
+    </filter>
+  </defs>
+  <path transform="translate(6.27 6.73) scale(0.6) translate(-6.27 -6.73)" class="confused-line" d="m2 2h8.54c-3.14 3.14-5.4 6.32-8.54 9.46h8.54" stroke="url(#neumorph-gradient)" filter="url(#confused-eye-shadow)"/>
+</svg>
